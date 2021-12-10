@@ -7,6 +7,7 @@ import Customers from './components/Customers';
 import Trainings from './components/Trainings';
 import Trainingcalendar from './components/Trainingcalendar';
 import Statistics from './components/Statistics';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </Toolbar>
        </AppBar>
         <Routes>
+          <Route exact path ="/"  element={<Home />}/>
           <Route path="/customers" element={<Customers />} />
           <Route path="/trainings" element={<Trainings />} />
           <Route path="/calendar" element={<Trainingcalendar />} />

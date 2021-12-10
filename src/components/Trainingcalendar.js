@@ -28,7 +28,8 @@ export default function Trainingcalendar() {
     })
     console.log('events:', events);
 
-    const initTime = new Date(new Date().setHours(12, 0, 0));
+    //kalenterin aloitusnäkymä tiettyyn kellonaikaan
+    //const initTime = new Date(new Date().setHours(12, 0, 0));
    
     return (
         <div>
@@ -41,7 +42,7 @@ export default function Trainingcalendar() {
                 resourceTitleAccessor="resource"
                 style={{ height: 600 }}
                 defaultView={Views.WEEK}
-                scrollToTime={initTime}
+                //scrollToTime={initTime}
             />
         </div>
     )  
